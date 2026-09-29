@@ -1,111 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>James Connoly - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #008cba;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            color: #008cba;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form label, form input, form textarea {
-            margin-bottom: 10px;
-        }
-        form input, form textarea {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        form button {
-            padding: 10px;
-            background-color: #008cba;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #005f5f;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>James Connolly</title>
+<meta name="description" content="James Connolly, final-year Computer Systems student at the University of Limerick. Infrastructure, release tooling and test automation at Microsoft Azure Core and Deloitte.">
+<meta name="theme-color" content="#0e0f11" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)">
+<meta property="og:title" content="James Connolly">
+<meta property="og:description" content="Infrastructure, release tooling and test automation. Final-year Computer Systems, University of Limerick.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%234ade80'/><text x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%230e0f11'>jc</text></svg>">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-    <!-- Header Section -->
-    <header>
-        <h1>James Connoly</h1>
-        <p>Aspiring Software Developer and Mentor</p>
-        <!-- Add your image here, if you want -->
-        <!-- <img src="yourphoto.jpg" alt="James Connoly" width="150"> -->
-    </header>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#">james<span>@</span>connolly</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#fyp">FYP</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I’m James Connoly, a Computer Systems student at the University of Limerick. With a passion for developing innovative solutions, I’ve completed various projects in Python, Java, and R. I'm currently a mentor for 1st-year students, helping them with programming challenges.
-        </p>
-    </section>
+<main id="main" class="wrap">
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul><li>
-            <h3>Discovering Novel Biomarkers for Pan Cancers—Biocomputing and Development Systems Group</h3>
-            <p>Developed an intuitive interface for biomedical dataset analysis. Developed my communication skills by Effectively presenting complex research findings and software 
-                development progress to fellow researchers, ensuring clear understanding and alignment on project goals. Collaborated with a multidisciplinary team of researchers 
-                and other interns to Develop an application that displays medical datasets in an easy to interpret format. Utilized data analysis and debugging techniques to 
-                identify and resolve software issues, enhancing the functionality and performance of our application. Applied analytical skills to interpret research data and 
-                support evidence based decisions.Proactively proposed and developed a new feature for the biocomputing software that pre-loaded certain application areas which 
-                reduced load times when viewing by ~38%, demonstrating a strong ability to anticipate needs and drive innovation. Below are links relating to this project which 
-                was co-developed with my classmate and fellow internship partner Adam <a href="https://jamesconnolly.shinyapps.io/main_research/" target="_blank">View project</a></p>
-        </li>
-            <li>
-                <h3>Java Ball-Dropping Game</h3>
-                <p>Created an interactive game where users can simulate falling balls. <a href="https://github.com/Jamco04" target="_blank">View on GitHub</a></p>
-            </li>
-        </ul>
-    </section>
+  <section class="hero">
+    <p class="kicker"><span class="dot" aria-hidden="true"></span>Final year, BSc Computer Systems, University of Limerick</p>
+    <h1>James Connolly</h1>
+    <p class="lede">I work on the parts of software people only notice when they break: release pipelines, CI, and the tests that catch problems before users do. So far that has meant release tooling at <strong>Microsoft Azure Core</strong>, a test automation framework at <strong>Deloitte</strong>, and a peer-reviewed paper from a research internship at UL.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:jamco2004@gmail.com">Get in touch</a>
+      <a class="btn" href="https://github.com/Jamco04">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/james-connolly-0693b02b7/">LinkedIn</a>
+    </div>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="cv-james-connoly.pdf" download>Download My CV</a>
-    </section>
+    <dl class="stats">
+      <div><dt>80+ hrs</dt><dd>developer time saved a week with CI build caching at Microsoft</dd></div>
+      <div><dt>400+</dt><dd>end-to-end Playwright tests built at Deloitte</dd></div>
+      <div><dt>38%</dt><dd>faster view loads from predictive pre-loading in research</dd></div>
+      <div><dt>100+</dt><dd>students tutored at UL's ICT Learning Centre</dd></div>
+    </dl>
+  </section>
+
+  <section id="work" class="block">
+    <h2><span class="num">01</span>Work</h2>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Microsoft <span class="where">Azure Core</span></h3>
+        <p class="meta">Software Engineering Intern · Dublin · Jun 2026 – Sep 2026</p>
+      </div>
+      <p>Releasing on the Azure Core infrastructure team meant juggling about 15 tabs and bookmarks: approvals in one place, queued pipelines in another, compliance checks somewhere else. I built an end-to-end release orchestration agent that brings all of it into one place, with the safe-shipping logic built in so every required gate is visible and checked before code reaches production.</p>
+      <p>I also profiled where our CI time was going and added targeted build caching across pipeline tasks. Build runtimes dropped by up to 33%, which adds up to more than 80 hours of developer time saved every week across the team's pipeline runs.</p>
+      <ul class="tags"><li>Azure DevOps</li><li>CI/CD</li><li>Release engineering</li><li>Build caching</li></ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Deloitte <span class="where">Public Sector &amp; Enterprise Solutions</span></h3>
+        <p class="meta">Junior Developer · Dublin · May 2025 – Feb 2026</p>
+      </div>
+      <p>My team was testing by hand, so I started our test automation. I designed and built a Playwright regression framework that grew to over 400 end-to-end tests across multiple suites. Each one runs in about 3 minutes and replaces 20 to 40 minutes of manual testing and chasing results, which works out at 130+ hours saved on every full regression cycle.</p>
+      <p>After my placement ended, Deloitte set up a dedicated Test Automation team to take the framework forward. Alongside that I built full-stack features in C#, JavaScript, Blazor and KnockoutJS, and worked with SQL Server, Redis and Azure DevOps.</p>
+      <ul class="tags"><li>Playwright</li><li>C#</li><li>Blazor</li><li>JavaScript</li><li>SQL Server</li><li>Redis</li></ul>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>University of Limerick <span class="where">Biocomputing and Development Systems Group</span></h3>
+        <p class="meta">Research &amp; Software Development Intern · Limerick · May 2024 – Aug 2024</p>
+      </div>
+      <p>Built a responsive R/Shiny app for exploring complex biological and medical datasets. Loading views was the slow part, so I designed a predictive pre-loading approach that cut view load times by 38%. <a href="#research">The work became a paper.</a></p>
+      <p class="links"><a href="https://jamesconnolly.shinyapps.io/main_research/">Live app ↗</a><a href="https://github.com/Jamco04/Summer-Internship-Project">Code ↗</a></p>
+      <ul class="tags"><li>R</li><li>Shiny</li><li>Data visualisation</li></ul>
+    </article>
+  </section>
+
+  <section id="fyp" class="block">
+    <h2><span class="num">02</span>Final year project</h2>
+    <div class="card">
+      <p class="card-title">An Adaptive Optimization Framework for Reducing Data Movement Overhead Using ML-Guided Zero-Copy Techniques</p>
+      <table class="spec">
+        <tr><th>Status</th><td><span class="pill">In progress</span></td></tr>
+        <tr><th>Idea</th><td>Zero-copy techniques avoid moving data between buffers, but they are not always worth it. The framework uses machine learning to decide when and how to apply them, reducing the cost of moving data through the system.</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="research" class="block">
+    <h2><span class="num">03</span>Research</h2>
+    <div class="card">
+      <p class="card-title">DataPulse: An Interactive Dashboard for Statistical and Exploratory Analysis of Multimodal Healthcare Data in Shiny</p>
+      <p class="muted">Co-author. Presented at DATA 2025 in Bilbao, Spain, with related findings co-presented at AICUR 2025.</p>
+      <p class="links"><a href="https://jamesconnolly.shinyapps.io/main_research/">Live app ↗</a><a href="https://github.com/Jamco04/Summer-Internship-Project">Code ↗</a></p>
+    </div>
+  </section>
+
+  <section id="skills" class="block">
+    <h2><span class="num">04</span>Skills</h2>
+    <div class="skills">
+      <div><h3>Languages</h3><p>Python, Java, C#, C, SQL, JavaScript, R, HTML/CSS</p></div>
+      <div><h3>Cloud &amp; DevOps</h3><p>Azure, Azure DevOps, GitHub Actions, CI/CD, Docker, Linux, NGINX, Git</p></div>
+      <div><h3>Data &amp; observability</h3><p>Redis, Elasticsearch, DynamoDB, SQL Server, Grafana, REST APIs</p></div>
+      <div><h3>Testing &amp; frameworks</h3><p>Playwright, Blazor, KnockoutJS, Shiny, Unity</p></div>
+    </div>
+  </section>
+
+  <section id="more" class="block">
+    <h2><span class="num">05</span>Education &amp; beyond</h2>
+    <ul class="timeline">
+      <li><span class="when">Class of 2027</span><div><strong>BSc Computer Systems, University of Limerick.</strong> First Class Honours standing. Awarded the Fidelis Partnership Scholarship for academic excellence and industry promise.</div></li>
+      <li><span class="when">2025 – now</span><div><strong>ICT Learning Centre tutor &amp; mentor.</strong> Tutored 100+ students through drop-in sessions and lead peer-supported learning groups in programming, data structures and debugging.</div></li>
+      <li><span class="when">2025</span><div><strong>Google workshops, Dublin.</strong> Selected for Google's Algorithms Workshop, and attended Google Code Retreat and the Datadog &amp; Google SRE Workshop.</div></li>
+      <li><span class="when">2023 – 2026</span><div><strong>UL Tennis Club.</strong> Treasurer for two years, then elected Chairperson, running events for 250+ members a year.</div></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="block contact">
+    <h2><span class="num">06</span>Contact</h2>
+    <p class="lede">Open to graduate roles in software and site reliability engineering. The fastest way to reach me is email.</p>
+    <p class="links big"><a href="mailto:jamco2004@gmail.com">jamco2004@gmail.com</a><a href="https://github.com/Jamco04">github.com/Jamco04 ↗</a><a href="https://www.linkedin.com/in/james-connolly-0693b02b7/">LinkedIn ↗</a></p>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>© 2026 James Connolly · Plain HTML and CSS, hosted on GitHub Pages.</p>
+</footer>
 </body>
 </html>
