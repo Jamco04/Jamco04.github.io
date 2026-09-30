@@ -9,20 +9,9 @@
   --accent-ink: #1f8f3a;
   --accent-soft: rgba(128, 239, 128, .22);
   --on-accent: #0d2a12;
+  color-scheme: light;
   --sans: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: "Geist Mono", ui-monospace, Menlo, Consolas, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0f0e;
-    --surface: #161816;
-    --ink: #ececec;
-    --muted: #9a9d9a;
-    --faint: #4d514d;
-    --line: #262926;
-    --accent-ink: #80ef80;
-    --accent-soft: rgba(128, 239, 128, .14);
-  }
 }
 
 * { box-sizing: border-box; }
@@ -99,7 +88,6 @@ h1 { font-size: clamp(44px, 8vw, 72px); font-weight: 600; line-height: 1.02; let
 .button:hover { border-color: var(--accent-ink); transform: translateY(-1px); }
 .button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .button.primary:hover { border-color: var(--accent-ink); }
-.email { margin: 18px 0 0; font-family: var(--mono); font-size: 13px; color: var(--muted); }
 
 .foot { display: flex; justify-content: space-between; padding-top: 20px; padding-bottom: 36px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .foot p { margin: 0; }
