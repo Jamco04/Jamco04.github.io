@@ -20,6 +20,7 @@ LinkedIn: https://www.linkedin.com/in/james-connolly-0693b02b7/
 ## Education
 
 - BSc Computer Systems, University of Limerick, graduating May 2027. First Class Honours (1:1) standing.
+- Alice Coffey Student Implementation Prize: 1st place, Undergraduate Level (15 June 2026).
 - Fidelis Partnership Scholarship for academic excellence and industry promise (November 2025).
 - Final year project (in progress): "An Adaptive Optimization Framework for Reducing Data Movement Overhead Using ML-Guided Zero-Copy Techniques", using machine learning to decide when zero-copy techniques are worth applying.
 
