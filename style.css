@@ -63,6 +63,8 @@ h1 { font-size: clamp(44px, 8vw, 72px); font-weight: 600; line-height: 1.02; let
 .stop > * { transition: opacity .6s ease, transform .6s ease; }
 .when { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; transition: color .4s; }
 .stop h3 { font-size: 22px; font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; margin: 0 0 4px; }
+.stop h3 a { text-decoration: none; background: linear-gradient(var(--accent-ink), var(--accent-ink)) 0 100% / 0 1.5px no-repeat; transition: background-size .3s ease, color .2s; }
+.stop h3 a:hover { color: var(--accent-ink); background-size: 100% 1.5px; }
 .stop p { margin: 0 0 12px; }
 .org { color: var(--muted); font-size: 15px; }
 .fig { display: flex; align-items: baseline; gap: 10px; color: var(--muted); font-size: 14px; margin-top: 16px !important; }
@@ -110,8 +112,8 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
 }
 .button svg { width: 18px; height: 18px; flex: none; }
 .button:hover { border-color: var(--accent-ink); transform: translateY(-1px); }
-.button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.button.primary:hover { border-color: var(--accent-ink); }
+.button.linkedin { background: #0a66c2; border-color: #0a66c2; color: #fff; }
+.button.linkedin:hover { background: #004182; border-color: #004182; }
 .button.github { background: #8250df; border-color: #8250df; color: #fff; }
 .button.github:hover { background: #6e40c9; border-color: #6e40c9; }
 .button.email { background: #f4c430; border-color: #f4c430; color: #3b2c00; }
@@ -126,6 +128,7 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
 .back:hover span { transform: translateX(-3px); }
 .detail h1 { font-size: clamp(36px, 6vw, 56px); margin-bottom: 16px; }
 .page-head .intro { max-width: 56ch; }
+.page-head .intro + .intro { margin-top: 14px; }
 .entries { padding-bottom: 8vh; }
 .entry { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; align-items: start; padding-top: 6vh; padding-bottom: 6vh; border-top: 1px solid var(--line); }
 .entry:not(:has(.media)) .text { grid-column: 1 / -1; max-width: 62ch; }

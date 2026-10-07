@@ -10,25 +10,25 @@ LinkedIn: https://www.linkedin.com/in/james-connolly-0693b02b7/
 ## Experience
 
 - **Software Engineering Intern, Microsoft Azure Core, Dublin (Jun 2026 - Sep 2026).** Built an end-to-end release orchestration agent that brings approvals, pipeline queues and production compliance checks into one place, replacing a release workflow spread across about 15 tabs and bookmarks, with every required gate checked before code reaches production. Profiled CI bottlenecks and added targeted build caching, cutting build runtimes by up to 33% and saving 80+ hours of developer time per week.
-- **Junior Developer, Deloitte, Public Sector & Enterprise Solutions, Dublin (May 2025 - Feb 2026).** Started test automation for the team with a Playwright regression framework of 400+ end-to-end tests. Each test runs in about 3 minutes and replaces 20-40 minutes of manual testing, saving an estimated 130+ hours per full regression cycle. Deloitte formed a dedicated Test Automation team after the placement to take the framework forward. Also built full-stack features in C#, JavaScript, Blazor and KnockoutJS with SQL Server, Redis and Azure DevOps.
-- **Research & Software Development Intern, Biocomputing and Development Systems Group, University of Limerick (May 2024 - Aug 2024).** Built an R/Shiny app for exploring biological and medical datasets; a predictive pre-loading design cut view load times by 38%. Live app: https://jamesconnolly.shinyapps.io/main_research/ Code: https://github.com/Jamco04/Summer-Internship-Project
+- **Junior Developer, Deloitte, Public Sector & Enterprise Solutions, Dublin (May 2025 - Feb 2026).** Started test automation for the team with a Playwright regression framework of 400+ end-to-end tests. Each test runs in about 3 minutes and replaces 20-40 minutes of manual testing, saving an estimated 130+ hours per full regression cycle. Deloitte formed a dedicated Test Automation team after the placement to take the framework forward. Also built full-stack features in C#, JavaScript, Blazor, KnockoutJS and CSS with SQL Server (SSMS), Redis and Azure DevOps, in an Agile Scrum team. Selected attendee of the Deloitte Future Leaders Academy and student brand representative for Deloitte at the University of Limerick Careers Fair.
+- **Research & Software Development Intern, Biocomputing and Development Systems Group, University of Limerick (May 2024 - Aug 2024).** Built an R/Shiny app for exploring biological and medical datasets; a predictive pre-loading design cut view load times by 38%. Gave weekly technical research presentations to senior researchers. Live app: https://jamesconnolly.shinyapps.io/main_research/ Code: https://github.com/Jamco04/Summer-Internship-Project
 
 ## Research
 
-- Co-author, "DataPulse: An Interactive Dashboard for Statistical and Exploratory Analysis of Multimodal Healthcare Data in Shiny", presented at DATA 2025, Bilbao, Spain (June 2025). Presented undergraduate research at the 12th All-Ireland Conference of Undergraduate Research (AICUR 2025), University of Limerick, 3 April 2025.
+- Co-author, "DataPulse: An Interactive Dashboard for Statistical and Exploratory Analysis of Multimodal Healthcare Data in Shiny", presented at DATA 2025, the 14th International Conference on Data Science, Technology and Applications, Bilbao, Spain (June 2025). Paper details: https://lnkd.in/gB7F9P3D Presented undergraduate research at the 12th All-Ireland Conference of Undergraduate Research (AICUR 2025), University of Limerick, 3 April 2025.
 
 ## Education
 
 - BSc Computer Systems, University of Limerick, graduating May 2027. First Class Honours (1:1) standing.
-- Alice Coffey Student Implementation Prize: 1st place, Undergraduate Level (15 June 2026).
+- Alice Coffey Student Implementation Prize: 1st place, Undergraduate Level (15 June 2026). Awarded by the Centre for Implementation Research at UL (CIRcUL) for the best application of implementation science within a student research project.
 - Fidelis Partnership Scholarship for academic excellence and industry promise (November 2025).
 - Final year project (in progress): "An Adaptive Optimization Framework for Reducing Data Movement Overhead Using ML-Guided Zero-Copy Techniques", using machine learning to decide when zero-copy techniques are worth applying.
 
 ## Leadership and activities
 
-- UL Tennis Club: Treasurer (2023/24, 2024/25), Chairperson (2025/26), Treasurer again (2026/27). Events for 250+ members a year.
+- UL Tennis Club: Treasurer (2023/24, 2024/25), Chairperson (2025/26), Treasurer again (2026/27). Events for 250+ members a year. As Treasurer, secured the club's initial equipment through a university fund that supports clubs, helping the club grow from 80 to 300 members.
 - ICT Learning Centre, University of Limerick: Peer Supported Learning Group leader (2024/25); drop-in tutor (2025/26, 2026/27). 100+ students tutored.
-- Google workshops, Dublin: Google Code Retreat (May 2025; TDD, clean-code refactoring), Datadog & Google SRE Workshop (June 2025; SLOs, deployment architecture), selected for Google's Algorithms Workshop (October 2025; dynamic programming, computational complexity).
+- Google workshops, Dublin: Google Code Retreat (May 2025; TDD, clean-code refactoring), Datadog & Google SRE Workshop (June 2025; SLOs, deployment architecture), selected through a competitive nationwide process for Google's Algorithms Workshop, an advanced algorithms masterclass with Google engineers (October 2025; dynamic programming, computational complexity). Code Retreat covered paired programming, TDD, modular system design and clean-code refactoring.
 
 ## Skills
 
