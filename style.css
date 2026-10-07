@@ -9,6 +9,8 @@
   --accent-ink: #1f8f3a;
   --accent-soft: rgba(128, 239, 128, .22);
   --on-accent: #0d2a12;
+  --violet: #7c3aed;
+  --violet-glow: rgba(139, 92, 246, .12);
   color-scheme: light;
   --sans: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: "Geist Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -20,6 +22,14 @@ body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 var(
 a { color: inherit; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 4px; transition: text-decoration-color .2s, color .2s; }
 a:hover { text-decoration-color: var(--accent-ink); }
 ::selection { background: var(--accent); color: var(--on-accent); }
+
+/* soft violet light in the page margins */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(900px 640px at 105% -5%, var(--violet-glow), transparent 62%),
+    radial-gradient(760px 620px at -8% 108%, rgba(167, 139, 250, .09), transparent 60%);
+}
 
 .wrap { width: 100%; max-width: 960px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 
@@ -35,6 +45,20 @@ nav a:hover { color: var(--ink); }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); flex: none; }
 h1 { font-size: clamp(44px, 8vw, 72px); font-weight: 600; line-height: 1.02; letter-spacing: -0.035em; margin: 0 0 20px; }
 .intro { font-size: 18px; color: var(--muted); max-width: 46ch; margin: 0; }
+.hero-text { display: flex; flex-direction: column; }
+.hero-art { display: none; position: relative; aspect-ratio: 1 / 1; width: 100%; }
+.hero-art canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-art::before { content: ""; position: absolute; inset: 10%; border-radius: 50%; background: radial-gradient(circle, rgba(139, 92, 246, .24), rgba(139, 92, 246, 0) 68%); filter: blur(12px); }
+.hero-art::after { content: ""; position: absolute; inset: -6%; background-image: radial-gradient(rgba(124, 58, 237, .22) 1px, transparent 1.4px); background-size: 18px 18px; -webkit-mask-image: radial-gradient(circle, #000 25%, transparent 68%); mask-image: radial-gradient(circle, #000 25%, transparent 68%); pointer-events: none; }
+.hero-art { animation: orb-in 1.2s ease both .15s; }
+@keyframes orb-in { from { opacity: 0; transform: scale(.92); } }
+@media (min-width: 900px) {
+  .hero { display: grid; grid-template-columns: max-content minmax(0, 1fr); align-content: center; align-items: center; column-gap: 24px; }
+  .hero h1 { white-space: nowrap; }
+  .hero-art { display: block; max-width: 440px; justify-self: center; }
+  .page-head { display: grid; grid-template-columns: minmax(0, 1fr) 240px; align-items: center; column-gap: 48px; }
+  .hero-art.small { max-width: 240px; }
+}
 .cue { align-self: flex-start; margin-top: 56px; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
 .cue span { display: inline-block; animation: nudge 2.4s ease-in-out infinite; }
 @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
@@ -136,7 +160,8 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
 .entry p { margin: 0 0 12px; }
 .entry:has(.media.wide) .text { grid-column: 1 / -1; max-width: 62ch; }
 .entry .media.wide { grid-column: 1 / -1; margin-top: 20px; }
-.media.wide .frames a { flex: 1 1 auto !important; }
+.media.wide:not(.pair) .frames a { flex: 1 1 auto !important; }
+.media.gallery .frames + .frames { margin-top: 10px; }
 .media.wide .frames img { width: 100%; max-height: none; }
 .entries .sub { margin: 0; padding-top: 8vh; padding-bottom: 1vh; }
 .soon { color: var(--muted); padding-top: 6vh; border-top: 1px solid var(--line); margin: 0; }
@@ -177,6 +202,6 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .stop > *, .when, .trail-nodes circle, .button, .frames a { transition: none; }
-  .walker-halo, .cue span, .detail main > section { animation: none; }
+  .walker-halo, .cue span, .detail main > section, .hero-art { animation: none; }
   @view-transition { navigation: none; }
 }
