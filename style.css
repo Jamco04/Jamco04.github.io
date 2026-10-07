@@ -134,6 +134,10 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
 .entry:not(:has(.media)) .text { grid-column: 1 / -1; max-width: 62ch; }
 .entry h2 { font-size: 22px; font-weight: 600; line-height: 1.25; letter-spacing: -0.015em; margin: 0 0 4px; }
 .entry p { margin: 0 0 12px; }
+.entry:has(.media.wide) .text { grid-column: 1 / -1; max-width: 62ch; }
+.entry .media.wide { grid-column: 1 / -1; margin-top: 20px; }
+.media.wide .frames a { flex: 1 1 auto !important; }
+.media.wide .frames img { width: 100%; max-height: none; }
 .entries .sub { margin: 0; padding-top: 8vh; padding-bottom: 1vh; }
 .soon { color: var(--muted); padding-top: 6vh; border-top: 1px solid var(--line); margin: 0; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
@@ -163,7 +167,7 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
   .stop:nth-child(even) .media:not(.pair) .frames { justify-content: flex-start; }
   .stop:nth-child(even) .media figcaption { text-align: left; }
   .media:not(.pair) .frames img { max-height: 380px; }
-  .media.large .frames img { max-height: none; width: 100%; }
+  .media.large .frames img, .media.wide .frames img { max-height: none; width: 100%; }
   .toolkit { grid-template-columns: 1fr; }
   .entry { grid-template-columns: 1fr; row-gap: 12px; }
   .page-head { padding-top: 6vh; }
