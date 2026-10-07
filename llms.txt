@@ -15,7 +15,7 @@ LinkedIn: https://www.linkedin.com/in/james-connolly-0693b02b7/
 
 ## Research
 
-- Co-author, "DataPulse: An Interactive Dashboard for Statistical and Exploratory Analysis of Multimodal Healthcare Data in Shiny", presented at DATA 2025, Bilbao, Spain (June 2025). Co-presented related findings at AICUR 2025.
+- Co-author, "DataPulse: An Interactive Dashboard for Statistical and Exploratory Analysis of Multimodal Healthcare Data in Shiny", presented at DATA 2025, Bilbao, Spain (June 2025). Presented undergraduate research at the 12th All-Ireland Conference of Undergraduate Research (AICUR 2025), University of Limerick, 3 April 2025.
 
 ## Education
 
