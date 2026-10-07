@@ -53,8 +53,8 @@
           <p class="when">Summer 2024</p>
           <h2>Research intern, University of Limerick</h2>
           <p class="org">Biocomputing and Development Systems Group</p>
-          <p>I researched and built a responsive, data-driven application in R and Shiny for visualising and analysing complex biological and medical datasets.</p>
-          <p>To keep it fast, I engineered a predictive pre-loading data architecture that cut view load times by 38%.</p>
+          <p>In summer 2024 I took part in UL's UPSTaRT programme (the S&amp;E Undergraduate Programme of Summer Training and Research Track) with my classmate Adam Urban, supervised by Prof. Conor Ryan and Dr. Meghana Kshirsagar. Our project was <em>Discovering Novel Biomarkers for Pan Cancers</em>, and what we built became DataPulse.</p>
+          <p>I researched and built a responsive, data-driven application in R and Shiny for visualising and analysing complex biological and medical datasets. To keep it fast, I engineered a predictive pre-loading data architecture that cut view load times by 38%.</p>
           <p>Working in a multidisciplinary team, I did data exploration, debugging and statistical modelling, and gave weekly technical research presentations to senior researchers.</p>
           <p class="fig"><span>38%</span> faster view loads</p>
           <p class="more"><a href="https://jamesconnolly.shinyapps.io/main_research/">Live app</a><a href="https://github.com/Jamco04/Summer-Internship-Project">Code</a></p>
@@ -63,6 +63,64 @@
           <div class="frames"><a href="/img/datapulse-poster.webp"><img src="/img/datapulse-poster.webp" width="1400" height="1967" alt="DataPulse research poster: an interactive dashboard for statistical and exploratory analysis of multimodal healthcare data in Shiny" loading="lazy" decoding="async"></a></div>
           <figcaption>DataPulse research poster</figcaption>
         </figure>
+      </article>
+      <h2 class="section-title sub">Why we built it</h2>
+      <article class="entry">
+        <div class="text">
+          <h2>Finding bias in healthcare data</h2>
+          <p>Bias in a dataset can quietly undermine how accurate and generalisable cancer research is. We wanted a tool that gives summary statistics and surfaces data bias across clinical tables, genomic data and medical imaging such as CT, MRI and fMRI.</p>
+          <p>Every week we met our mentor and the other interns to review progress, get feedback and plan next steps, and on Mondays we joined the lab meeting of the Biocomputing and Development Systems (BDS) group.</p>
+        </div>
+      </article>
+      <h2 class="section-title sub">The summer, week by week</h2>
+      <article class="entry">
+        <div class="text">
+          <p class="when">27 May to 10 June</p>
+          <h2>Weeks 1 and 2: Getting started</h2>
+          <p>We started by learning R, RStudio and Shiny, through Codecademy's Learn R course, YouTube tutorials and Shiny's Get Started guides, and read the key papers our advisors gave us for the biological background.</p>
+          <p>By the second week we had a first version of the app visualising a lung adenocarcinoma clinical dataset from cBioPortal, hosted on shinyapps.io.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="text">
+          <p class="when">10 to 24 June</p>
+          <h2>Weeks 3 and 4: More data and a DICOM viewer</h2>
+          <p>We added more clinical datasets for the user to choose between, and worked in feedback from a progress presentation to our advisors.</p>
+          <p>We wrote an R Markdown notebook documenting the analysis so it could be reproduced, and brought in the NSCLC Radiomics dataset of non-small cell lung cancer CT scans, viewable in the app through a DICOM viewer.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="text">
+          <p class="when">24 June to 7 July</p>
+          <h2>Weeks 5 and 6: Interactivity and statistics</h2>
+          <p>We made the plots interactive with Plotly and added a correlation matrix for the numeric clinical variables.</p>
+          <p>We presented the work as a data bias visualisation tool to the Culhane Lab in the School of Medicine. Following their feedback, we added stratified analysis with the table1 R package, split by whichever categorical variable the user picks.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="text">
+          <p class="when">7 to 21 July</p>
+          <h2>Weeks 7 and 8: T-tests and radiogenomics</h2>
+          <p>We started working with RadioGx and PharmacoGx, two Bioconductor packages from BHKLab, for radiogenomic and pharmacogenomic analysis.</p>
+          <p>We added a t-test comparing drug sensitivity across drugs, cell lines or tissue types, and used RadioGx to look at how cell lines respond to radiation and which genes are linked to that response. That matters for biomarker discovery, combination therapy and personalised medicine.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="text">
+          <p class="when">Late July to August</p>
+          <h2>Weeks 9 and 10: Pharmacogenomics and the report</h2>
+          <p>With PharmacoGx we plotted drug-response curves for a chosen drug and cell line, and built drug sensitivity signatures for identifying biomarkers.</p>
+          <p>We also worked through a single-cell RNA-seq analysis in Seurat: importing the raw expression matrix, quality control, picking out highly variable genes, PCA, then t-SNE and UMAP to find clusters. The last week went into finishing the report, documentation and code.</p>
+        </div>
+      </article>
+      <h2 class="section-title sub">The result</h2>
+      <article class="entry">
+        <div class="text">
+          <h2>DataPulse</h2>
+          <p>DataPulse brings all of it together for finding data bias and getting summary statistics: interactive clinical plots, demographics (age, gender, survival status, race and ethnicity), the DICOM CT viewer, a correlation matrix, stratified analysis, t-tests on IC50 drug response data, and radiogenomic and pharmacogenomic analysis.</p>
+          <p>It focuses on lung adenocarcinoma, but it's built to be useful for pan-cancer research. The summer taught me a lot about data analysis, building tools, and doing research as part of a team.</p>
+          <p class="more"><a href="https://adamurban.shinyapps.io/DataPulse/">DataPulse app</a><a href="https://github.com/adamurban04/DataPulse">DataPulse code</a><a href="https://adamurban04.github.io/portfolio/research/upstart-summer-research/">Adam's write-up</a></p>
+        </div>
       </article>
   </section>
 
