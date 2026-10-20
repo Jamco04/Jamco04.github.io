@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Final year project · James Connolly</title>
-<meta name="description" content="James Connolly&#x27;s final year project: an adaptive optimization framework for reducing data movement overhead using ML-guided zero-copy techniques.">
+<meta name="description" content="James Connolly&#x27;s final year project: an adaptive framework for reducing the cost of moving data onto the GPU. Early results show picking the best transfer method per batch is 2.5x faster than the standard copy.">
 <link rel="canonical" href="https://jamesconnolly.me/story/final-year-project/">
 <meta name="theme-color" content="#fafafa">
 <meta property="og:title" content="Final year project · James Connolly">
-<meta property="og:description" content="James Connolly&#x27;s final year project: an adaptive optimization framework for reducing data movement overhead using ML-guided zero-copy techniques.">
+<meta property="og:description" content="James Connolly&#x27;s final year project: an adaptive framework for reducing the cost of moving data onto the GPU. Early results show picking the best transfer method per batch is 2.5x faster than the standard copy.">
 <meta property="og:url" content="https://jamesconnolly.me/story/final-year-project/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='8' fill='%2380EF80'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,32 @@
           <p class="when">2026/27</p>
           <h2>An Adaptive Optimization Framework for Reducing Data Movement Overhead Using ML-Guided Zero-Copy Techniques</h2>
           <p class="org">BSc Computer Systems, University of Limerick</p>
-          <p>My final year project uses machine learning to decide when zero-copy is worth applying. I graduate in May 2027 and I'm looking for graduate roles in software and site reliability engineering.</p>
+          <p>At Microsoft I saw how expensive it is to move data around at scale, and my final year project is my attempt to bring that cost down.</p>
+          <p>Using the retrieval stage of Graph RAG as the test application, I'm measuring how long it takes to gather a batch of table rows onto the GPU four different ways: an explicit copy through pinned memory, zero-copy reads straight from host memory, Unified Memory, and Unified Memory with batched prefetching. The goal is a framework that uses machine learning to pick the right method for each batch.</p>
+          <p>Early results are promising. On one workload, the gap between the best and worst method was <strong>389&times;</strong>, which is why picking the right one matters so much.</p>
+          <p>I graduate in May 2027 and I'm looking for graduate roles in software and site reliability engineering.</p>
+          <p class="fig"><span>2.5&times;</span> faster than the standard copy, picking the best method per batch</p>
+          <p class="fig"><span>389&times;</span> gap between the best and worst method on one workload</p>
+        </div>
+      </article>
+      <h2 class="section-title sub">Early results</h2>
+      <article class="entry">
+        <div class="text">
+          <p class="when">October 2026</p>
+          <h2>Preview runs on a GPU</h2>
+          <p>These first runs were on a shared Tesla T4 in Google Colab (CUDA 13.0). Every gathered row was checked against its expected value, with no wrong results. The results that count will come from the university's cluster.</p>
+          <p>Test A covered 48 points: 1 and 4 GiB tables, random, clustered and in-order rows, and batch sizes from 0.01% to 30% of the table, with 2,880 timed runs per code version. Zero-copy was fastest at 46 of the 48 points, and picking the best method for each batch was <strong>2.5&times; faster</strong> than the standard explicit copy.</p>
+          <p>Test B kept the data on the GPU between batches. There, Unified Memory won at 23 of 24 points, and the best method per batch was <strong>9.6&times; faster</strong> than my improved explicit copy. It was one short run, so I'll be repeating it.</p>
+          <p>I also improved each method along the way. My final explicit copy is 1.46&times; faster than the original and Unified Memory 1.76&times;. Prefetching still slows down at some points, and that's the next thing I'm fixing.</p>
+          <p class="fig"><span>46 of 48</span> points won by zero-copy in Test A</p>
+          <p class="fig"><span>9.6&times;</span> best method per batch in Test B</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="text">
+          <p class="when">September 2026 to now</p>
+          <h2>How it's going</h2>
+          <ol class="steps"><li><span class="step-when">7 to 20 Sep</span><strong>Planning and scoping</strong> Two weeks with my supervisor, shaping the question and what the project would cover.</li><li><span class="step-when">21 Sep to 4 Oct</span><strong>Proposal and test harness</strong> Confirmed access to the university's GPU cluster, drafted and submitted my proposal, and built the first version of the benchmark harness.</li><li><span class="step-when">5 to 11 Oct</span><strong>Tooling and first improvements</strong> Set up CI and tooling, and made a first improvement to each of the four methods.</li><li><span class="step-when">12 Oct</span><strong>First GPU run</strong> Found the 389&times; gap: zero-copy took 1.23 ms where Unified Memory took 477 ms, on a 4 GiB table of 512-byte rows.</li><li><span class="step-when">13 Oct</span><strong>Before and after</strong> Ran the original and improved versions of every method side by side, and tuned the defaults.</li><li><span class="step-when">19 to 20 Oct</span><strong>Ready to present</strong> Reworked my interim presentation after feedback from my supervisor, checked every number, and committed version 1.</li><li class="next"><span class="step-when">Next</span><strong>Interim presentation, then the cluster</strong> Interim presentation in week 8 or 9, then the prefetching fix and full re-runs on the university's cluster.</li></ol>
         </div>
       </article>
   </section>
