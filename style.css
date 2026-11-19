@@ -129,6 +129,8 @@ a.read:hover span, .hobbies a:hover span, .card:hover .arrow { transform: transl
 .hobbies { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .hobbies a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 15px; text-decoration: none; transition: border-color .2s, transform .2s; }
 .hobbies a span { color: var(--accent-ink); }
+.hobbies .chip { display: inline-flex; align-items: center; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 15px; color: var(--ink); }
+.hobbies a { border-color: var(--accent-ink); }
 .hobbies a:hover { border-color: var(--accent-ink); transform: translateY(-1px); }
 
 .contact { padding-bottom: 10vh; }
