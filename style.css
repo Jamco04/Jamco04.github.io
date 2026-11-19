@@ -93,6 +93,7 @@ h1 { font-size: clamp(44px, 8vw, 72px); font-weight: 600; line-height: 1.02; let
 .org { color: var(--muted); font-size: 15px; }
 .fig { display: flex; align-items: baseline; gap: 10px; color: var(--muted); font-size: 14px; margin-top: 16px !important; }
 .fig span { flex: none; white-space: nowrap; font-size: 28px; font-weight: 600; line-height: 1; color: var(--ink); letter-spacing: -0.03em;; padding: 0 3px; background: linear-gradient(to top, rgba(128, 239, 128, .55) 0 .3em, transparent .3em); }
+.figs { display: flex; flex-wrap: wrap; gap: 0 28px; }
 .stop .text p strong, .entry .text p strong { font-weight: 650; color: var(--ink); background: linear-gradient(to top, rgba(128, 239, 128, .38) 0 .38em, transparent .38em); padding: 0 1px; white-space: nowrap; }
 .roles { list-style: none; margin: 4px 0 14px; padding: 0; display: grid; gap: 4px; }
 .roles li { display: flex; gap: 14px; align-items: baseline; }
