@@ -2,6 +2,16 @@
 
 > Final-year BSc Computer Systems student at the University of Limerick (First Class Honours standing, graduating May 2027). Most recently a Software Engineering Intern at Microsoft Azure Core; before that a Junior Developer at Deloitte. Works on release engineering, CI/CD, build optimisation and test automation. Looking for graduate roles in software and site reliability engineering.
 
+## At a glance
+
+- Two industry roles before final year: Software Engineering Intern at Microsoft Azure Core (2026), and nine months as a Junior Developer at Deloitte (2025-26).
+- At Microsoft, built a release orchestration agent that starts and monitors deployments on its own, and added pipeline caching that cut build times by up to 33%, saving 80+ hours of developer time a week.
+- At Deloitte, started the team's test automation with a Playwright framework of 400+ end-to-end tests. Deloitte later set up a dedicated Test Automation team to carry the work on.
+- Published research: co-author of a paper at DATA 2025 (Bilbao, Spain), and presented at AICUR 2025.
+- Awards: first place at the UL CSIS Hackathon 2026 (16 teams, 98 students); 1st place, Alice Coffey Student Implementation Prize (2026); Fidelis Partnership Scholarship (2025), the only computer science student among the eight chosen; selected through a competitive nationwide process for Google's Algorithms Workshop (2025).
+- First Class Honours standing in BSc Computer Systems at the University of Limerick, graduating May 2027. Final year project on ML-guided zero-copy data movement to the GPU, with early results 2.5x faster than the standard copy.
+- Mentor and leader: has tutored 100+ students at UL's ICT Learning Centre (PSLG leader, then drop-in tutor), and served as Treasurer and Chairperson of the UL Tennis Club while it grew from 80 to 300 members.
+
 Website: https://jamesconnolly.me
 Email: jamco2004@gmail.com
 GitHub: https://github.com/Jamco04
