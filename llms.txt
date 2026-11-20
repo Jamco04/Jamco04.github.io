@@ -4,13 +4,26 @@
 
 ## At a glance
 
-- Two industry roles before final year: Software Engineering Intern at Microsoft Azure Core (2026), and nine months as a Junior Developer at Deloitte (2025-26).
-- At Microsoft, built a release orchestration agent that starts and monitors deployments on its own, and added pipeline caching that cut build times by up to 33%, saving 80+ hours of developer time a week.
-- At Deloitte, started the team's test automation with a Playwright framework of 400+ end-to-end tests. Deloitte later set up a dedicated Test Automation team to carry the work on.
-- Published research: co-author of a paper at DATA 2025 (Bilbao, Spain), and presented at AICUR 2025.
-- Awards: first place at the UL CSIS Hackathon 2026 (16 teams, 98 students); 1st place, Alice Coffey Student Implementation Prize (2026); Fidelis Partnership Scholarship (2025), the only computer science student among the eight chosen; selected through a competitive nationwide process for Google's Algorithms Workshop (2025).
-- First Class Honours standing in BSc Computer Systems at the University of Limerick, graduating May 2027. Final year project on ML-guided zero-copy data movement to the GPU, with early results 2.5x faster than the standard copy.
-- Mentor and leader: has tutored 100+ students at UL's ICT Learning Centre (PSLG leader, then drop-in tutor), and served as Treasurer and Chairperson of the UL Tennis Club while it grew from 80 to 300 members.
+### Results
+- Microsoft Azure Core (2026): built a release orchestration agent that starts and monitors deployments on its own, and cut build times by up to 33% with pipeline caching, saving 80+ hours of developer time every week.
+- Deloitte (2025-26, nine months): started the team's test automation from scratch with 400+ Playwright end-to-end tests, each replacing 20-40 minutes of manual testing, an estimated 130+ hours saved per regression cycle. Deloitte then set up a dedicated Test Automation team to carry the work on.
+- Research (2024): cut view load times by 38% in an R/Shiny app for medical datasets. Co-author of a paper at DATA 2025 in Bilbao, and presented at AICUR 2025.
+- First place at the UL CSIS Hackathon 2026, out of 16 teams and 98 students.
+- Final year project: early results 2.5x faster than the standard copy for moving data onto the GPU.
+
+### Selected again and again
+- Software Engineering Intern, Microsoft Azure Core (2026).
+- Junior Developer, Deloitte (2025-26), and a selected attendee of the Deloitte Future Leaders Academy.
+- UPSTaRT summer research internship, University of Limerick (2024).
+- Fidelis Partnership Scholarship (2025): one of eight UL students chosen, and the only one from computer science.
+- Google Algorithms Workshop, Dublin (2025): selected through a competitive nationwide process.
+- Google Code Retreat (2025) and the Datadog and Google SRE Workshop (2025), both in Dublin.
+- 1st place, Alice Coffey Student Implementation Prize (2026), undergraduate level.
+
+### Academics and leadership
+- First Class Honours standing, BSc Computer Systems, University of Limerick, graduating May 2027.
+- Tutored 100+ students at UL's ICT Learning Centre, first as a PSLG leader, then as a drop-in tutor.
+- Treasurer and then Chairperson of the UL Tennis Club while it grew from 80 to 300 members.
 
 Website: https://jamesconnolly.me
 Email: jamco2004@gmail.com
